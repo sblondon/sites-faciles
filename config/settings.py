@@ -471,3 +471,7 @@ DSFR_USE_INTEGRITY_CHECKSUMS = True if os.getenv("DSFR_USE_INTEGRITY_CHECKSUMS")
 
 SF_DISABLE_TUTORIALS = True if os.getenv("SF_DISABLE_TUTORIALS") in ["1", "True"] else False
 SECURE_REFERRER_POLICY = "strict-origin-when-cross-origin"
+
+# personnalisation Portail-RSE
+WAGTAILIMAGES_MAX_IMAGE_PIXELS = 2000 * 2000
+WAGTAILIMAGES_MAX_UPLOAD_SIZE = 5 * 1024 * 1024  # 5Mo
