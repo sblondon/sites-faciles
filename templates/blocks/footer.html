@@ -39,6 +39,24 @@
   {{ settings.content_manager.CmsDsfrConfig.footer_description | richtext | richtext_p_add_class:"fr-footer__content-desc" }}
 {% endblock footer_description %}
 
+{% block footer_partners %}
+  <div class="fr-footer__partners">
+      <h4 class="fr-footer__partners-title">Porté par Les entreprises s'engagent, la Direction Générale des Entreprises et BPIfrance</h4>
+      <div class="fr-footer__partners-logos">
+          <div class="fr-footer__partners-main">
+              <ul style="display: flex; gap: 1rem; padding-inline-start: 0;">
+                  <li>
+                      <img class="fr-footer__logo" style="height: 3.5rem" src="https://sites-faciles.s3.fr-par.scw.cloud/sites-faciles/images/les-entreprises-sengagent.original.jpg" alt="Logo pour Les Entreprises S’engagent">
+                  </li>
+                  <li>
+                      <img class="fr-footer__logo" style="height: 3.5rem" src="https://sites-faciles.s3.fr-par.scw.cloud/sites-faciles/images/bpifrance.original.png" alt="Logo pour Bpifrance">
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </div>
+{% endblock footer_partners %}
+
 {% block footer_links %}
   {% if request %}
     {% flat_menu handle="footer" template="menus/custom_flat_menu_footer.html" %}
